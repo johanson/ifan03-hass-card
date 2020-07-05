@@ -1,0 +1,16 @@
+{
+  "name": "customhasscard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "content-card-ifan03.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  }
+}
