@@ -1,5 +1,4 @@
 import { LitElement, html, css } from 'https://unpkg.com/lit-element@2.3.1/lit-element.js?module';
-import { unsafeHTML } from 'https://unpkg.com/lit-html/directives/unsafe-html.js?module';
 
 class Card extends LitElement {
   static get properties() {
