@@ -74,17 +74,21 @@ class Card extends LitElement {
       :host {
         box-sizing: border-box;
       }
+      
       .clear:after {
         content: "";
         display: table;
         clear: both;
       }
+      
       .hidden {
         display: none;
       }
+      
       .content {
         padding: 0px 16px 16px
       }
+      
       .button {
         display: block;
         position: relative;
@@ -97,46 +101,54 @@ class Card extends LitElement {
         height: auto;
         cursor: pointer;
         overflow: hidden;
-        text-align center;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0, 0, 0, 0.5);
         mask-repeat: no-repeat;
         -webkit-mask-repeat: no-repeat;
       }
+      
       .dark .button {
-        background-color: rgba(255,255,255,0.5);
+        background-color: rgba(255, 255, 255, 0.5);
       }
+      
       .button:first-of-type {
         margin-left: 0;
       }
+      
       div[data-speed="off"] {
         mask-image: url('/local/ifan03-card/static/off.svg');
         -webkit-mask-image: url('/local/ifan03-card/static/off.svg');
       }
+      
       div[data-speed="low"] {
         mask-image: url('/local/ifan03-card/static/low.svg');
         -webkit-mask-image: url('/local/ifan03-card/static/low.svg');
       }
+      
       div[data-speed="medium"] {
         mask-image: url('/local/ifan03-card/static/medium.svg');
         -webkit-mask-image: url('/local/ifan03-card/static/medium.svg');
       }
+      
       div[data-speed="high"] {
         mask-image: url('/local/ifan03-card/static/high.svg');
         -webkit-mask-image: url('/local/ifan03-card/static/high.svg');
       }
-      .speed-off div[data-speed="off"], 
-      .speed-low div[data-speed="low"], 
-      .speed-medium div[data-speed="medium"], 
+      
+      .speed-off div[data-speed="off"],
+      .speed-low div[data-speed="low"],
+      .speed-medium div[data-speed="medium"],
       .speed-high div[data-speed="high"] {
         background-color: var(--accent-color);
       }
-      .speed-off span[data-speed="off"], 
-      .speed-low span[data-speed="low"], 
-      .speed-medium span[data-speed="medium"], 
+      
+      .speed-off span[data-speed="off"],
+      .speed-low span[data-speed="low"],
+      .speed-medium span[data-speed="medium"],
       .speed-high span[data-speed="high"] {
         font-weight: bold;
         opacity: 1;
       }
+      
       span {
         display: block;
         text-align: center;
@@ -146,13 +158,14 @@ class Card extends LitElement {
         text-overflow: ellipsis;
         width: 21.25%;
         margin-left: 5%;
-        text-alignt: center;
+        text-align: center;
         line-height: 20px;
         height: 20px;
         display: block;
         float: left;
         opacity: 0.7;
       }
+      
       span:first-of-type {
         margin-left: 0;
       }
