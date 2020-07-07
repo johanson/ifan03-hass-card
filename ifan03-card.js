@@ -1,4 +1,9 @@
-import { LitElement, html, css } from 'https://unpkg.com/lit-element@2.3.1/lit-element.js?module';
+export const LitElement = customElements.get('home-assistant-main')
+  ? Object.getPrototypeOf(customElements.get('home-assistant-main'))
+  : Object.getPrototypeOf(customElements.get('hui-view'));
+
+export const { html } = LitElement.prototype;
+export const { css } = LitElement.prototype;
 
 class Card extends LitElement {
   static get properties() {
